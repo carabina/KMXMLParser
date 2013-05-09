@@ -32,6 +32,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <p>KMXMLParser is a simple class you can add to your iOS project to make parsing any standard RSS feed simple. Just drag the class into your project, add a couple of lines of code, and the RSS feed will be returned in an array which allows you to easily access the main elements of the RSS feed.</p>
+
+<p>To parse a feed you only need the following two lines of code:</p>
+
+<p><code>KMXMLParser *km = [[KMXMLParser alloc] initWithURL:url delegate:self];
+NSMutableArray *posts = [km posts];</code></p>
       </section>
     </div>
 
